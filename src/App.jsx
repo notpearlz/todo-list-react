@@ -1,13 +1,17 @@
+import { BrowserRouter, Routes, Route } from "react-router";
+
 import './App.css'
+import Todo from './pages/todo-list'
 
 
 function App() {
 
   return (
-
-    <>
-      <h1>app page</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Todo />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
